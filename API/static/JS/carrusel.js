@@ -109,7 +109,7 @@ function actualizarCarrusel() {
 
 // Obtiene los grupos
 function cargarGrupos() {
-  fetch("/grupos")  // <-- Cambiado a ruta relativa para Flask
+  fetch("/grupos")
     .then((response) => response.json())
     .then((data) => {
       grupos = data;

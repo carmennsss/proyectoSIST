@@ -28,7 +28,7 @@ function aniadirEventos() {
 
 // Vuelve al indice
 function volverAtras() {
-  window.location.href = "/";  // ← ADAPTADO: vuelve a la raíz del servidor Flask
+  window.location.href = "/";
 }
 
 // Saco la mesa de los parametros
@@ -96,7 +96,7 @@ function mostrarRaciones(idProducto) {
 
   productoActual = idProducto; // Actualizo el producto actual
 
-  fetch(`/tipos/${idProducto}`)  // ← ADAPTADO a ruta relativa Flask
+  fetch(`/tipos/${idProducto}`)
     .then((response) => response.json())
     .then((data) => {
       mostrarRacionesSelect(data, idProducto);
@@ -106,7 +106,7 @@ function mostrarRaciones(idProducto) {
 
 // Obtiene los productos para un tipo
 function mostrarProductos(idGrupo) {
-  fetch(`/productos/${idGrupo}`)  // ← ADAPTADO a ruta relativa Flask
+  fetch(`/productos/${idGrupo}`)
     .then((response) => response.json())
     .then((data) => {
       imprimirProductos(data);

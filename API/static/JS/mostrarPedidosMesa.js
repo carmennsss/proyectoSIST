@@ -30,7 +30,7 @@ function aniadirEventos() {
 
 // Lleva al indice
 function volverAtras() {
-  window.location.href = "/";  // ← ADAPTADO para Flask (antes "../../index.html")
+  window.location.href = "/";
 }
 
 // Obtiene el id de la mesa de los parametros
@@ -64,7 +64,7 @@ function mostrarPedidos(pedidos) {
 
 // Obtiene los pedidos de la mesa
 function cargarPedidos() {
-  fetch("/pedidos/" + idMesa)  // ← ADAPTADO a ruta relativa para funcionar en Flask y Render
+  fetch("/pedidos/" + idMesa)
     .then((response) => response.json())
     .then((data) => {
       mostrarPedidos(data);

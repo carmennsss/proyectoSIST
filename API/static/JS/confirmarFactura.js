@@ -36,7 +36,7 @@ function aniadirEventos() {
 
 // Lleva al index
 function volverAtras() {
-  window.location.href = "/";  // <-- Cambiado a ruta relativa Flask
+  window.location.href = "/";
 }
 
 // -----------------
@@ -81,7 +81,7 @@ function confirmarPedido() {
   };
 
   // Mando los parametros en un json
-  fetch("/pedidos", {  // <-- Cambiado a ruta relativa
+  fetch("/pedidos", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

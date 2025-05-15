@@ -136,3 +136,11 @@ button {
 button:hover {
   background-color: #4CAF50;
 }
+
+#botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-right: 55%;
+}
