@@ -193,7 +193,7 @@ def listar_pedidos():
     return render_template('listarPedidos.html', idMesa=id_mesa)
 
 @app.route('/crearPedido')
-def crear_pedido():
+def vista_crear_pedido():
     id_mesa = request.args.get('idMesa')
     return render_template('crearPedido.html', idMesa=id_mesa)
 
