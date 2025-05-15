@@ -2,6 +2,7 @@
 # @Author: Carmen
 # 21/03/2025
 #----------------------------------
+import os
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import mysql.connector
@@ -187,4 +188,5 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
