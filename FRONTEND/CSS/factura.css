@@ -1,0 +1,96 @@
+/* @Author: Carmen */
+/* 21/03/2025 */
+
+/* --- ESTILOS GENERALES --- */
+body {
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5 url("../IMGS/fondo2.jpg") no-repeat fixed center/cover;
+}
+
+/* --- CONTENEDOR DEL TICKET --- */
+.ticket {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border: 1px dashed #aaa;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* --- TÍTULOS DEL TICKET --- */
+.ticket h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* --- TEXTO DEL TICKET --- */
+.ticket p {
+  margin: 5px 0;
+  font-size: 0.85em;
+}
+
+/* --- CÓDIGO DE BARRAS --- */
+.barcode {
+  margin: 10px 0;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+/* --- TABLA DE PRODUCTOS --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+table th, table td {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+/* --- TOTALES --- */
+.totales p {
+  text-align: right;
+  margin: 2px 0;
+  font-size: 0.8em;
+}
+
+/* --- COMENTARIO DEL TICKET --- */
+.opinion {
+  margin: 10px 0;
+  font-size: 0.75em;
+}
+
+/* --- BOTONES --- */
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.botones button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  font-size: 0.85em;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* --- BOTÓN DE VOLVER --- */
+#volver {
+  background-color: #8b0000;
+}
+
+/* --- EFECTO HOVER BOTONES --- */
+.botones button:hover {
+  filter: brightness(0.9);
+}

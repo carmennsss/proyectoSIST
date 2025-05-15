@@ -1,0 +1,103 @@
+/* @Author: Carmen */
+/* 21/03/2025 */
+
+/* --- ESTILOS GENERALES --- */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f5f5f5 url("../IMGS/fondo2.jpg") no-repeat fixed center/cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;          
+  flex-direction: column;
+}
+
+/* --- TÍTULOS GENERALES --- */
+h1, h3 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #8b0000;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  width: 40%;
+}
+
+/* --- CONTENEDOR DE PEDIDOS --- */
+#lista-pedidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* --- CADA TARJETA DE PEDIDO --- */
+#lista-pedidos > div {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #8b0000;
+  transition: all 0.3s ease;
+}
+
+/* --- EFECTO HOVER EN TARJETAS --- */
+#lista-pedidos > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- TÍTULO DE CADA PEDIDO --- */
+#lista-pedidos p:first-child {
+  font-weight: bold;
+  color: #8b0000;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* --- SEPARADOR ENTRE DATOS DEL PEDIDO --- */
+#lista-pedidos hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #8b0000, transparent);
+  margin: 15px 0;
+}
+
+/* --- BOTONES GENERALES --- */
+button {
+  background-color: #8b0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 250px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+/* --- EFECTO HOVER EN BOTONES --- */
+button:hover {
+  background-color: #4caf50;
+  transform: translateY(-2px);
+}

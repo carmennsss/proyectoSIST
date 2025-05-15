@@ -1,0 +1,43 @@
+<!-- @Author: Carmen -->
+<!-- 21/03/2025 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Pedidos</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../CSS/productos.css" />
+    <link rel="stylesheet" href="../CSS/carrusel.css" />
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <!-- Carrusel -->
+      <div class="carrusel-container">
+        <button class="carrusel-control prev">‹</button>
+        <div class="carrusel" id="carrusel-grupos"></div>
+        <button class="carrusel-control next">›</button>
+      </div>
+
+      <!-- Cabecera -->
+      <div id="cabecera">
+        <h1>Haz tu pedido</h1>
+        <h2>Mesa: <span id="numero-mesa"></span></h2>
+      </div>
+
+      <!-- Zona de volver -->
+      <div class="zona-volver">
+        <button id="volver" type="button">Volver</button>
+      </div>
+
+      <!-- Zona de productos -->
+      <div id="zona-productos" class="zona-productos"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../JS/carrusel.js"></script>
+    <script src="../JS/hacerPedido.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!-- @Author: Carmen -->
+<!-- 21/03/2025 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket de Compra</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../CSS/factura.css" />
+  </head>
+  <body>
+
+    <div class="ticket">
+
+      <!-- Cabecera -->
+      <h1>¡Gracias!</h1>
+      <p>
+        Avd Puerro 27 29010 Malaga<br />restaurante.es<br />+34 92 548 96 60
+      </p>
+      <div class="barcode">||| ||| |||</div>
+
+      <p>
+        <strong>Ticket num:</strong> P.0201012AQS5852<br />
+        <strong>Fecha:</strong> 16-feb-18 &nbsp;&nbsp;&nbsp;
+        <strong>Hora:</strong> 11:20
+      </p>
+
+      <!-- Contenido -->
+      <table>
+        <thead>
+          <tr>
+            <th>Descripción</th>
+            <th>Tipo</th>
+            <th>Cant</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="idProducto"></td>
+            <td id="idTipo"></td>
+            <td>1</td>
+            <td>X</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Totales -->
+      <div class="totales">
+        <p><strong id="idMesa">Mesa:</strong></p>
+        <p><strong>Total: X €</strong></p>
+      </div>
+
+      <p><strong>Forma de pago:</strong> EFECTIVO</p>
+      <p>Entregado: X €<br />Cambio: X €</p>
+
+      <!-- Opinion -->
+      <div class="opinion">
+        <p>¡Danos tu opinión y gana un vale de 10€!</p>
+      </div>
+
+      <!-- Botones -->
+      <div class="botones">
+        <button id="confirmar-compra">Confirmar Compra</button>
+        <button id="volver">Volver</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../JS/confirmarFactura.js"></script>
+  </body>
+</html>
