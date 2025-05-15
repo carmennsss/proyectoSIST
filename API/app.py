@@ -5,7 +5,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import mysql.connector
-from controller.CoBaseDatos import CoBaseDatos
+from API.controller.CoBaseDatos import CoBaseDatos
 
 app = Flask(__name__)
 CORS(app)
