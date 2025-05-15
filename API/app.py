@@ -187,6 +187,29 @@ def crear_pedido():
 def index():
     return render_template('index.html')
 
+@app.route('/listarPedidos')
+def listar_pedidos():
+    id_mesa = request.args.get('idMesa')
+    return render_template('listarPedidos.html', idMesa=id_mesa)
+
+@app.route('/crearPedido')
+def crear_pedido():
+    id_mesa = request.args.get('idMesa')
+    return render_template('crearPedido.html', idMesa=id_mesa)
+
+@app.route('/factura')
+def mostrar_factura():
+    idMesa = request.args.get('idMesa')
+    idProducto = request.args.get('idProducto')
+    idTipo = request.args.get('idTipo')
+
+    return render_template('factura.html',
+                           idMesa=idMesa,
+                           idProducto=idProducto,
+                           idTipo=idTipo
+                           )
+
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
