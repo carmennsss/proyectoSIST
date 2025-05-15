@@ -36,7 +36,7 @@ function aniadirEventos() {
 
 // Lleva al index
 function volverAtras() {
-  window.location.href = "../../index.html";
+  window.location.href = "/";  // <-- Cambiado a ruta relativa Flask
 }
 
 // -----------------
@@ -52,11 +52,11 @@ function sacarIds() {
 
   if (idMesa && idProducto && idTipo) {
     // Obtengo el nombre del producto
-    fetch(`http://localhost:5000/productosNombre/${idProducto}`)
+    fetch(`/productosNombre/${idProducto}`)  // <-- Cambiado a ruta relativa
       .then((response) => response.json())
       .then((producto) => {
         // Obtengo el nombre del tipo
-        fetch(`http://localhost:5000/tiposNombre/${idTipo}`)
+        fetch(`/tiposNombre/${idTipo}`)  // <-- Cambiado a ruta relativa
           .then((response) => response.json())
           .then((tipo) => {
             // Actualizo el html
@@ -81,7 +81,7 @@ function confirmarPedido() {
   };
 
   // Mando los parametros en un json
-  fetch("http://localhost:5000/pedidos", {
+  fetch("/pedidos", {  // <-- Cambiado a ruta relativa
     method: "POST",
     headers: {
       "Content-Type": "application/json",

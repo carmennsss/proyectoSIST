@@ -7,10 +7,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestión de Pedidos</title>
-    
+
     <!-- Estilos -->
-    <link rel="stylesheet" href="../CSS/productos.css" />
-    <link rel="stylesheet" href="../CSS/carrusel.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/productos.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/carrusel.css') }}"
+    />
   </head>
   <body>
     <div class="contenedor-principal">
@@ -37,7 +43,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../JS/carrusel.js"></script>
-    <script src="../JS/hacerPedido.js"></script>
+    <script src="{{ url_for('static', filename='JS/carrusel.js') }}"></script>
+    <script src="{{ url_for('static', filename='JS/hacerPedido.js') }}"></script>
   </body>
 </html>

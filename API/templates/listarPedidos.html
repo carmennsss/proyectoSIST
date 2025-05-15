@@ -9,7 +9,11 @@
     <title>Gestión de Pedidos</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="../CSS/pedidos.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/pedidos.css') }}"
+    />
+    
   </head>
   <body>
 
@@ -26,6 +30,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../JS/mostrarPedidosMesa.js"></script>
+    <script src="{{ url_for('static', filename='JS/mostrarPedidosMesa.js') }}"></script>
   </body>
 </html>

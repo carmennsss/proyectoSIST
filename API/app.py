@@ -2,12 +2,12 @@
 # @Author: Carmen
 # 21/03/2025
 #----------------------------------
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import mysql.connector
 from API.controller.CoBaseDatos import CoBaseDatos
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static', static_folder='static')
 CORS(app)
 
 #----------------------------------
@@ -182,5 +182,9 @@ def crear_pedido():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

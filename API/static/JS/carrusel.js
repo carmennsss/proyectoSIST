@@ -21,12 +21,12 @@ let currentIndex = 0;
 let grupos = [];
 
 const imagenesGrupos = {
-  1: "../IMGS/bebidas.png",
-  2: "../IMGS/entrantes.png",
-  3: "../IMGS/cuchareo.png",
-  4: "../IMGS/carnes.png",
-  5: "../IMGS/pescado.png",
-  6: "../IMGS/postres.png",
+  1: "/static/IMGS/bebidas.png",
+  2: "/static/IMGS/entrantes.png",
+  3: "/static/IMGS/cuchareo.png",
+  4: "/static/IMGS/carnes.png",
+  5: "/static/IMGS/pescado.png",
+  6: "/static/IMGS/postres.png",
 };
 
 // -----------------
@@ -109,7 +109,7 @@ function actualizarCarrusel() {
 
 // Obtiene los grupos
 function cargarGrupos() {
-  fetch("http://localhost:5000/grupos")
+  fetch("/grupos")  // <-- Cambiado a ruta relativa para Flask
     .then((response) => response.json())
     .then((data) => {
       grupos = data;

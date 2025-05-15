@@ -31,7 +31,7 @@ function mostrarMesas(mesas) {
     mesaDiv.setAttribute("data-mesa", mesa);
 
     mesaDiv.innerHTML = `
-            <img src="FRONTEND/IMGS/mesa2.png" alt="Mesa ${mesa}"">
+            <img src="/static/imgs/mesa2.png" alt="Mesa ${mesa}">
         `;
 
     // Agrego el evento para poder seleccionar la mesa
@@ -63,14 +63,14 @@ function aniadirEventos() {
 // Lleva a la pagina de listar
 function mostrarPedidosMesa() {
   if (idMesa != -1) {
-    window.location.href = `FRONTEND/HTML/listarPedidos.html?idMesa=${idMesa}`;
+    window.location.href = `/listarPedidos?idMesa=${idMesa}`;
   }
 }
 
 // Lleva a la pagina de crear el pedido
 function iniciarPedidoMesa() {
   if (idMesa != -1) {
-    window.location.href = `FRONTEND/HTML/crearPedido.html?idMesa=${idMesa}`;
+    window.location.href = `/crearPedido?idMesa=${idMesa}`;
   }
 }
 
@@ -80,7 +80,7 @@ function iniciarPedidoMesa() {
 
 // Obtiene las mesas
 function cargarMesas() {
-  fetch("http://127.0.0.1:5000/mesas")
+  fetch("/mesas")
     .then((response) => response.json())
     .then((data) => {
       mostrarMesas(data);

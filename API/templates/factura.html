@@ -9,12 +9,13 @@
     <title>Ticket de Compra</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="../CSS/factura.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/factura.css') }}"
+    />
   </head>
   <body>
-
     <div class="ticket">
-
       <!-- Cabecera -->
       <h1>¡Gracias!</h1>
       <p>
@@ -70,6 +71,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../JS/confirmarFactura.js"></script>
+    <script src="{{ url_for('static', filename='JS/confirmarFactura.js') }}"></script>
   </body>
 </html>

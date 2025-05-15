@@ -9,10 +9,12 @@
     <title>Gestión de Pedidos</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="./FRONTEND/CSS/mesas.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='CSS/mesas.css') }}"
+    />
   </head>
   <body>
-
     <!-- Cabecera -->
     <div>
       <h1>¡Bienvenido al Restaurante!</h1>
@@ -28,6 +30,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="./FRONTEND/JS/crearMesas.js"></script>
+    <script src="{{ url_for('static', filename='JS/crearMesas.js') }}"></script>
   </body>
 </html>
