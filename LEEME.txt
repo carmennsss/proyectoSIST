@@ -1,7 +1,0 @@
-El archivo que se debe iniciar con las apis es app.py encontrado en API.
-El índice es el archivo index.html y las demás páginas se encuentran en FRONTEND/HTML (como el CSS y los JS)
----------
-
-Con la ruta dada (y el servidor iniciado) ya comenzaría el programa!!
-https://san-jose-1-dam.82-223-102-153.plesk.page/alumno29/
-Espero que esté bien :)
