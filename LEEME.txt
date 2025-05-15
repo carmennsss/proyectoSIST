@@ -1,0 +1,25 @@
+EN LOCAL
+---------
+El archivo que se debe iniciar con las apis es app.py encontrado en API.
+El índice es el archivo index.html y las demás páginas se encuentran en FRONTEND/HTML (como el CSS y los JS)
+
+Con la ruta dada (y el servidor iniciado) ya comenzaría el programa
+https://san-jose-1-dam.82-223-102-153.plesk.page/alumno29/
+------------------------------------
+
+EN REMOTO
+---------
+La aplicacion está alojada en una web para poder hacer uso de ella sin tener que iniciar el app.py
+Va un poco lento y hay que esperar que cargue si hace tiempo que no hay actividad
+https://proyectosist-3ertri-carmen.onrender.com
+------------------------------------
+
+La esctructura en remoto es diferente a la local debido a los requerimientos
+de la web en la que está alojada, por lo tanto en el servidor se encuentra la estructura que se pide
+en el proyecto y la estructura y el codigo de la parte remota está en mi github
+
+Así que si necesitas comprobarlo o cualquier cosa, mi usuario es: carmennsss
+El repositorio es proyectoSIST
+- La branch master tiene el proyecto como se pide en el documento dado
+- La branch render-develop tiene el proyecto con la estructura del remoto
+Espero que esté bien :)
