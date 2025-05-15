@@ -31,7 +31,7 @@ function mostrarMesas(mesas) {
     mesaDiv.setAttribute("data-mesa", mesa);
 
     mesaDiv.innerHTML = `
-            <img src="/static/imgs/mesa2.png" alt="Mesa ${mesa}">
+            <img src="/static/IMGS/mesa2.png" alt="Mesa ${mesa}">
         `;
 
     // Agrego el evento para poder seleccionar la mesa
